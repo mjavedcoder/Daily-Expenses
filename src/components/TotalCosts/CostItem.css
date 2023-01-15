@@ -1,0 +1,52 @@
+.cost-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* box-shadow: 0 2px 8px black; */
+  margin: 1rem 0;
+  /* border-radius: 12px; */
+  background-color: darkkhaki;
+  font-weight: 500;
+  padding: 15px;
+}
+
+.cost-item_details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-end;
+  flex-flow: column-reverse;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.cost-item h2 {
+  font-size: 25px;
+  flex: 1;
+  margin: 0 1rem;
+  color: black;
+  padding-bottom: 10px;
+  padding-left: 40px;
+}
+
+.cost-item_price {
+  font-size: 2rem;
+  font-weight: bold;
+  color: black;
+  background-color: darkcyan;
+  border: 2px solid black;
+  border-radius: 22px;
+  padding: 10px 15px;
+}
+
+@media (min-width: 580px) {
+  .cost-item_details {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 1;
+  }
+}
+.cost-item button {
+  cursor: pointer;
+}

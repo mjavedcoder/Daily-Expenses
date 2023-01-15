@@ -1,0 +1,26 @@
+.cost {
+  display: flex;
+  flex-direction: column;
+  width: 90px;
+  height: 90px;
+  border: 1px solid red;
+  background-color: #2a2a2a;
+  color: white;
+  border-radius: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cost-month {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cost-year {
+  font-size: 15px;
+}
+
+.cost-date {
+  font-size: 20px;
+  font-weight: bold;
+}
