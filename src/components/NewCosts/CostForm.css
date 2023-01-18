@@ -1,0 +1,42 @@
+.new-cost_design {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.new-cost_design label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  display: block;
+  color: darkkhaki;
+}
+
+.new-cost_design input {
+  font: inherit;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 20rem;
+  max-width: 100%;
+}
+
+.new-cost_design button {
+  font: inherit;
+  cursor: pointer;
+  padding: 10px;
+  border: 1px solid #40005d;
+  background-color: #40005d;
+  color: white;
+  border-radius: 12px;
+  margin-left: 270px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+.new-cost_design button:hover,
+.new-cost_design button:active {
+  background-color: darkcyan;
+  border-color: #510674;
+}
