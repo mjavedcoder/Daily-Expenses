@@ -7,23 +7,55 @@ function CostForm() {
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
 
+  //   const [userAdd, setUserAdd] = useState({
+  //     title: "",
+  //     amount: "",
+  //     date: "",
+  //   });
+
   const changeTitle = (event) => {
     setTitle(event.target.value);
+    // setUserAdd({
+    //   title: event.target.value,
+    //   ...userAdd,
+    // });
   };
 
   const changeAmount = (event) => {
     setAmount(event.target.value);
+    // setUserAdd({
+    //   amount: event.target.value,
+    //   ...userAdd,
+    // });
   };
 
   const changeDate = (event) => {
     setDate(event.target.value);
+    // setUserAdd({
+    //   date: event.target.value,
+    //   ...userAdd,
+    // });
+  };
+
+  const submitHandler = (event) => {
+    event.preventDefault();
+
+    const userData = {
+      userTitle: title,
+      userAmount: amount,
+      userDate: new Date(date),
+    };
+    console.log(userData);
+    setTitle("");
+    setAmount("");
+    setDate("");
   };
   return (
-    <form>
+    <form onSubmit={submitHandler}>
       <div className="new-cost_design">
         <div>
           <label>Title</label>
-          <input type="text" onChange={changeTitle}></input>
+          <input type="text" value={title} onChange={changeTitle}></input>
         </div>
         <div>
           <label>Amout</label>
@@ -31,6 +63,7 @@ function CostForm() {
             type="number"
             min="0.01"
             step="0.01"
+            value={amount}
             onChange={changeAmount}
           ></input>
         </div>
@@ -38,6 +71,7 @@ function CostForm() {
           <label>Date</label>
           <input
             type="date"
+            value={date}
             min="2020-01-01"
             max="2023-12-31"
             onChange={changeDate}
