@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./CostForm.css";
 
-function CostForm() {
+function CostForm(props) {
   const [title, setTitle] = useState("");
   const [amount, setAmount] = useState("");
   const [date, setDate] = useState("");
@@ -45,7 +45,10 @@ function CostForm() {
       userAmount: amount,
       userDate: new Date(date),
     };
-    console.log(userData);
+    props.firstData(userData);
+
+    // Here we are calling the function "userInputData" which we have declared in the "NewCost" component by passing the object(userData) as a parameter and this parameter value going to replace customData(parameter) in the "NewCost" component .
+
     setTitle("");
     setAmount("");
     setDate("");

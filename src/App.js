@@ -34,9 +34,16 @@ function App() {
       date: new Date(2023, 3, 17),
     },
   ];
+
+  const addAllExpense = (cost) => {
+    console.log(cost);
+  };
   return (
     <div>
-      <NewCost></NewCost>
+      {/* <NewCost></NewCost> */}
+      {/* We can use self-closing tag if there is nothing between tags. */}
+      <NewCost passData={addAllExpense} />
+      {/* Here we also did the same thing which we did in "NewCost" component and we are passing the pointer to the function "addAllExpense" and calling this in the NewCost component.In this way we have passed the data from child to parent (CostForm => NewCost => App). */}
       <Costs items={costs}></Costs>
     </div>
   );
