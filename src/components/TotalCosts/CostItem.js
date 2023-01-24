@@ -1,22 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import "./CostItem.css";
 import CostDate from "./CostDate";
 import Card from "../UserInterface/Card";
 
 function CostItem(props) {
-  const [label, setLabel] = useState(props.label);
-
-  function clickPlease() {
-    setLabel("New");
-  }
   return (
     <Card className="cost-item">
       <CostDate date={props.date}></CostDate>
       <div className="cost-item_details">
-        <h2>{label}</h2>
+        <h2>{props.label}</h2>
         <div className="cost-item_price">{props.amount}</div>
       </div>
-      <button onClick={clickPlease}>Click me !</button>
     </Card>
   );
 }
