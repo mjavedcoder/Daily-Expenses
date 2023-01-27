@@ -5,31 +5,31 @@ import NewCost from "./components/NewCosts/NewCost";
 const hardCoded_Data = [
   {
     unit: "1",
-    item: "Grocery",
+    title: "Grocery",
     amount: "£294",
     date: new Date(2023, 2, 2),
   },
   {
     unit: "2",
-    item: " Rent",
+    title: " Rent",
     amount: "£500",
     date: new Date(2023, 2, 14),
   },
   {
     unit: "3",
-    item: " Gas",
+    title: " Gas",
     amount: "£100",
     date: new Date(2023, 2, 15),
   },
   {
     unit: "4",
-    item: " Phone-Bill",
+    title: " Phone-Bill",
     amount: "£50",
     date: new Date(2023, 3, 20),
   },
   {
     unit: "5",
-    item: " Gym",
+    title: " Gym",
     amount: "£10",
     date: new Date(2023, 3, 17),
   },

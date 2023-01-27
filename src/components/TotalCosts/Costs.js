@@ -15,9 +15,9 @@ function Costs(props) {
         <CostFilter selected={firstValue} onChangeTransferData={transferData} />
         {/* By using an arrow function: */}
         {props.items.map((item) => (
-          <CostItem date={item.date} label={item.item} amount={item.amount} />
+          <CostItem date={item.date} label={item.title} amount={item.amount} />
         ))}
-        s {/* By using simple function syntex: */}
+        {/* By using simple function syntex: */}
         {/* {props.items.map(function (item) {
           return (
             <CostItem date={item.date} label={item.item} amount={item.amount} />
