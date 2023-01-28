@@ -7,7 +7,7 @@ const hardCoded_Data = [
     unit: "1",
     title: "Grocery",
     amount: "£294",
-    date: new Date(2023, 2, 2),
+    date: new Date(2022, 2, 2),
   },
   {
     unit: "2",
