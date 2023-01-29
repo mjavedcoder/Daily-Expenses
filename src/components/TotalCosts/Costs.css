@@ -3,6 +3,11 @@
   background-color: black;
   margin: 20px auto;
   width: 50%;
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: larger;
+
   /* border-radius: 20px;
   box-shadow: 2px 3px 4px black; */
 }

@@ -9,7 +9,7 @@ function CostItem(props) {
       <CostDate date={props.date}></CostDate>
       <div className="cost-item_details">
         <h2>{props.label}</h2>
-        <div className="cost-item_price">{props.amount}</div>
+        <div className="cost-item_price">£{props.amount}</div>
       </div>
     </Card>
   );

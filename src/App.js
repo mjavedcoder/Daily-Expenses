@@ -6,31 +6,31 @@ const hardCoded_Data = [
   {
     unit: "1",
     title: "Grocery",
-    amount: "£294",
+    amount: "294",
     date: new Date(2022, 2, 2),
   },
   {
     unit: "2",
     title: " Rent",
-    amount: "£500",
+    amount: "500",
     date: new Date(2023, 2, 14),
   },
   {
     unit: "3",
     title: " Gas",
-    amount: "£100",
+    amount: "100",
     date: new Date(2023, 2, 15),
   },
   {
     unit: "4",
     title: " Phone-Bill",
-    amount: "£50",
+    amount: "50",
     date: new Date(2023, 3, 20),
   },
   {
     unit: "5",
     title: " Gym",
-    amount: "£10",
+    amount: "10",
     date: new Date(2023, 3, 17),
   },
 ];
