@@ -21,7 +21,8 @@ function ChartGraph(props) {
     graphDataPoints[expenseMonth].value += item.amount;
   }
 
-  return <Graphs dataPoints={ChartGraph} />;
+  //   return <Graphs dataPoints={ChartGraph} />;
+  return <Graphs dataPoints={graphDataPoints} />;
 }
 
 export default ChartGraph;
