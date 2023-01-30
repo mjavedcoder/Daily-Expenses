@@ -4,6 +4,7 @@ import "./Costs.css";
 import Card from "../UserInterface/Card";
 import CostFilter from "./CostFilter";
 import CostList from "./CostList";
+import ChartGraph from "./ChartGraph";
 
 function Costs(props) {
   const [firstValue, setFirstValue] = useState("2023");
@@ -20,7 +21,7 @@ function Costs(props) {
     <div>
       <Card className="costs">
         <CostFilter selected={firstValue} onChangeTransferData={transferData} />
-
+        <ChartGraph items={filteredValues} />
         <CostList items={filteredValues} />
       </Card>
     </div>

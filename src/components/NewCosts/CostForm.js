@@ -42,7 +42,7 @@ function CostForm(props) {
 
     const userData = {
       title: title,
-      amount: amount,
+      amount: +amount,
       date: new Date(date),
     };
     props.firstData(userData);
